@@ -1,0 +1,118 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    }
+
+.sitelogo {
+    display: flex;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(53, 128, 18, 0.75);
+    }
+.coverphoto {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+.footer {
+    display: grid;
+    grid-area: 4 / 1 / 5 / 3; 
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(53, 128, 18);
+    border: solid 1px;
+    height: 100px;
+        }
+.footer a {
+    padding: 2vw;
+        }
+a { 
+    color: black;
+    font-size: 1.2rem; 
+    text-decoration: none; 
+        }
+a:hover { 
+    border: solid 0.1vw black;
+    border-radius: 1vw; 
+    background-color: rgb(53, 128, 18);
+    }
+
+@media only screen and (max-width: 740px) {.sitelogo, .storiespagesitelogo {padding: 0vw 10vw;}}
+
+/*Home Page*/
+.grid-containerhome {
+    display: grid;
+    grid-template-rows: clamp(80px, 15vw, 100px) clamp(200px, 50vw, 400px) auto auto;
+    grid-template-columns: 1fr 1fr; 
+    }
+.homepageheader{
+    display: flex;
+    z-index: 0;
+    grid-area: 1 / 1 / 3 / 3;
+    }
+.homepagecontent {
+    display: grid;
+    grid-area: 3 / 1 / 4 / 2; 
+    margin: 2vw;
+    }
+/*Lakes page */
+.grid-containerlakes {
+    display: grid;
+    grid-template-rows: clamp(80px, 15vw, 100px) clamp(160px, 20vw, 240px) auto auto;
+    grid-template-columns: 1fr 1fr; 
+    }
+.lakespageheader {
+    display: flex;
+    z-index: 0;
+    grid-area: 1 / 1 / 3 / 3;
+    }
+.lakespagecontent {
+    display: grid;
+    grid-area: 3 / 1 / 4 / 3; 
+    margin: 2vw;
+    }
+/*Trout Page */
+.grid-containertrout {
+    display: grid;
+    grid-template-rows: clamp(80px, 15vw, 100px) clamp(150px, 20vw, 300px) auto auto;
+    grid-template-columns: 1fr 1fr; 
+    }    
+.troutpageheader {
+    display: flex;
+    z-index: 0;
+    grid-area: 1 / 1 / 3 / 3;
+    }
+.troutpagecontent {
+    display: grid;
+    grid-area: 3 / 1 / 4 / 3; 
+    margin: 2vw;
+    }  
+/* Stories Page */
+.storiespagesitelogo {
+    display: flex;
+    height: clamp(80px, 15vw, 100px); 
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(53, 128, 18, 0.75);
+    }
+
+.storiespagecontent {
+    padding: 1vw;
+    border: solid black;
+    }
+.stories-image1 {
+    float: right;
+    height: clamp(200px, 100vh, 500px);
+    margin: 1vw 1vw 0vw;
+    }
+
+        
